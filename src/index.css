@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&family=Source+Sans+Pro:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app{
+  height:100%;
+  background-color: #010026;
+  @apply text-white
+}
+
+/*  🍫   **********NavBar-Start************🍫  */
+.navbar{
+  @apply z-40 w-full fixed top-0 py-6 
+}
+.navbar .navbar-main-div {
+  @apply flex items-center justify-between mx-auto w-5/6 
+}
+.main-div .title{
+  @apply font-playfair text-3xl font-bold
+}
+.smallScreen-true{
+  @apply flex justify-between gap-16 font-opensans text-sm font-semibold
+}
+
+.anchor{
+  @apply hover:text-yellow transition duration-500 
+}
+
+.navbar-button{
+  @apply rounded-full bg-red p-2
+}
+
+/*  mobile Menu Section*/
+.mobile-main{
+  @apply fixed right-0 bottom-0 h-full bg-blue w-[300px]
+}
+
+.mobile-div-1{
+  @apply flex justify-between p-12
+}
+
+/* Menu items */
+.mobile-menu{
+  @apply flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue
+}
+
+/*  🍫   **********NavBar-End************🍫  */
